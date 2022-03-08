@@ -1,5 +1,5 @@
 import { endAdventure } from '..';
-import { wakeUp } from './6_wake_up';
+import { relaxOnTheSofa } from './5_1_need_a_rest';
 import { askQuestion, clear, print } from '../console';
 
 const verdicts = ['Guilty', 'Not Guilty'] as const;
@@ -40,8 +40,8 @@ export function meetTheQueen(): void {
 		return endAdventure();
 	} else {
 		print(`You have been found NOT GUILTY! Thank goodness. 🥳`);
-		print('Time to wake up...');
-		return askQuestion('Press ENTER to continue! ', wakeUp);
+		print('Time for a rest and a cuppa said Alice...');
+		return askQuestion('Press ENTER to continue! ', relaxOnTheSofa);
 	}
 }
 
